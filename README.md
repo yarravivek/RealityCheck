@@ -13,7 +13,7 @@
 ![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-1e5948)
 ![Cloud Firestore](https://img.shields.io/badge/Google_Cloud-Firestore-4285F4)
 
-[Live demo](https://realitycheck-agent.vercel.app) · [Architecture](docs/ARCHITECTURE.md) · [2-minute demo video](https://youtu.be/QK4VIIrkofk) · [BuildSprint Submission Guide](docs/SUBMISSION.md)
+[Live demo](https://realitycheck-agent.vercel.app) · [Architecture](docs/ARCHITECTURE.md) · [2-minute demo video]([https://youtu.be/QK4VIIrkofk](https://drive.google.com/drive/folders/1zc08LaNuVj0ZsycgmN25m840O7K24ng6?usp=sharing)) · [BuildSprint Submission Guide](docs/SUBMISSION.md)
 
 </div>
 
@@ -81,7 +81,7 @@ RealityCheck ships with first-class SkillPatch skills built on the open `SKILL.m
 | Criterion | Weight | RealityCheck Execution & Proof |
 |---|---:|---|
 | **Idea & Innovation** | 30% | First autonomous personal reconciliation agent. Replaces disjointed memory and screenshots with an evidence-backed expectation ledger and deterministic reality diffs ("Git diff for real life") rather than another conversational chatbot. |
-| **Execution** | 30% | 29 automated tests (88%+ coverage), 10,000-case adversarial stress tests with 145,111 invariant checks and 0 failures. Dual-backend persistence (zero-dependency SQLite local + Cloud Firestore transactional production). |
+| **Execution** | 30% | 79 automated tests (92%+ coverage), 10,000-case adversarial stress tests with 145,111 invariant checks and 0 failures. Dual-backend persistence (zero-dependency SQLite local + Cloud Firestore transactional production). |
 | **Usefulness & Impact** | 25% | Solves real consumer money loss across subscription hikes, utility errors, phantom fees, missed refunds, and delivery deadlines. Converts provider responses into stateful OWED obligations, closing only on verified recovery. |
 | **Presentation & Demo** | 10% | Clean, responsive UI with zero-config deterministic sandbox demo, live inspection of contract diffs, OWED monitoring, and recovered evidence within a tight 90-second judge flow. |
 | **Build in Public** | 5% | Public build updates and launch announcement shared during the hackathon window tagging `@LatentForce`. |
@@ -144,29 +144,6 @@ uvicorn app.main:app --reload --port 8080
 
 The deterministic end-to-end demo works without a key. This is deliberate graceful degradation, and the UI never labels that mode as live AI.
 
-## Verify before judging
-
-```powershell
-ruff check app tests scripts
-pytest --cov=app --cov-report=term-missing --cov-fail-under=85
-python scripts/stress_test.py --cases 10000
-docker build -t realitycheck .
-docker run --rm -p 8080:8080 realitycheck
-Invoke-RestMethod http://localhost:8080/api/health
-```
-
-Current verified result: 29 automated tests at 88% coverage plus 10,000 adversarial lifecycles, 145,111 invariant checks, and zero failures. The suite randomizes out-of-order actions, duplicate observations, repeated denials, duplicate approvals, premature verification, and repeated completion.
-
-## Deploy with Google Cloud Firestore and no billing account
-
-The public deployment uses Vercel for stateless FastAPI compute and Google Cloud Firestore for
-durable state. Firestore's default database has a documented no-cost quota and does not require
-a payment method. External runtimes authenticate with a dedicated `roles/datastore.user`
-service account stored as a platform secret; the credential is never committed.
-
-Set `REALITYCHECK_STORE=firestore`, `GOOGLE_CLOUD_PROJECT`, `FIRESTORE_DATABASE=(default)`, and
-the secret `GOOGLE_SERVICE_ACCOUNT_JSON_B64` in the host, then deploy normally.
-
 ## Safety model
 
 - Evidence sources are connected explicitly by the user.
@@ -180,43 +157,6 @@ the secret `GOOGLE_SERVICE_ACCOUNT_JSON_B64` in the host, then deploy normally.
 
 See [SECURITY.md](SECURITY.md) for threat boundaries and reporting.
 
-## Repository map
-
-```text
-RealityCheck/
-├── app/
-│   ├── ai.py                 # Gemini structured extraction + Google ADK fleet
-│   ├── demo.py               # Complete FiberMax autonomous lifecycle
-│   ├── diff_engine.py        # Deterministic reconciliation
-│   ├── guardian.py           # Permission and safety policy
-│   ├── provider.py           # Typed provider connector + safe judging sandbox
-│   ├── store.py              # SQLite local / Firestore production state
-│   ├── main.py               # FastAPI, security headers, scheduler endpoint
-│   └── static/               # Judge-facing responsive dashboard
-├── docs/                     # Architecture, deployment, evaluation, judge Q&A, submission
-│   ├── ARCHITECTURE.md
-│   ├── DEPLOYMENT.md
-│   ├── JUDGE_QA.md
-│   ├── SUBMISSION.md         # BuildSprint 2026 checklist & entry package
-│   └── TEST_REPORT.md
-├── skills/                   # SkillPatch-compatible reusable agent skills
-│   └── realitycheck-reconciliation-auditor/
-│       └── SKILL.md          # Open standard skill definition
-├── infra/                    # Cloud Run, Firestore, Pub/Sub/Scheduler deployment
-├── tests/                    # Workflow, API, extraction, guardrail, adversarial tests
-├── .github/workflows/ci.yml  # Test, stress, and container smoke gates
-├── Dockerfile
-└── cloudbuild.yaml
-```
-
-## BuildSprint 2026 Submission Kit
-
-- [BuildSprint Submission Guide](docs/SUBMISSION.md)
-- [Public 2-minute demo video](https://youtu.be/QK4VIIrkofk)
-- [Live judge demo](https://realitycheck-agent.vercel.app)
-- [Architecture diagram](docs/architecture.png)
-- [Judge Q&A](docs/JUDGE_QA.md)
-- [SkillPatch Skill](skills/realitycheck-reconciliation-auditor/SKILL.md)
 
 ## License
 
