@@ -7,13 +7,13 @@
 **It is Git diff for real life.**
 
 [![CI](https://github.com/yarravivek/RealityCheck/actions/workflows/ci.yml/badge.svg)](https://github.com/yarravivek/RealityCheck/actions/workflows/ci.yml)
-[![BuildSprint 2026](https://img.shields.io/badge/BuildSprint-2026-6C5CE7?style=flat)](docs/SUBMISSION.md)
-[![Built with LatentCode](https://img.shields.io/badge/Harness-LatentCode-00B894?style=flat)](docs/SUBMISSION.md)
+[![BuildSprint 2026](https://img.shields.io/badge/BuildSprint-2026-6C5CE7?style=flat)](https://github.com/yarravivek/RealityCheck)
+[![Built with LatentCode](https://img.shields.io/badge/Harness-LatentCode-00B894?style=flat)](https://latentstack.dev)
 [![SkillPatch](https://img.shields.io/badge/SkillPatch-Compatible-FD79A8?style=flat)](skills/realitycheck-reconciliation-auditor/SKILL.md)
 ![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-1e5948)
 ![Cloud Firestore](https://img.shields.io/badge/Google_Cloud-Firestore-4285F4)
 
-[Live demo](https://realitycheck-agent.vercel.app) · [Architecture](docs/ARCHITECTURE.md) · [2-minute demo video](https://drive.google.com/drive/folders/1zc08LaNuVj0ZsycgmN25m840O7K24ng6?usp=sharing) · [BuildSprint Submission Guide](docs/SUBMISSION.md)
+[Live demo](https://realitycheck-agent.vercel.app) · [Architecture](docs/ARCHITECTURE.md) · [2-minute demo video](https://drive.google.com/drive/folders/1zc08LaNuVj0ZsycgmN25m840O7K24ng6?usp=sharing) · [Build in Public](https://lnkd.in/p/dPxTwKBM)
 
 </div>
 
@@ -84,7 +84,7 @@ RealityCheck ships with first-class SkillPatch skills built on the open `SKILL.m
 | **Execution** | 30% | 29 automated tests (88.24% statement coverage), 10,000-case adversarial stress tests with 145,111 invariant checks and 0 failures. Dual-backend persistence (zero-dependency SQLite local + Cloud Firestore transactional production). |
 | **Usefulness & Impact** | 25% | Solves real consumer money loss across subscription hikes, utility errors, phantom fees, missed refunds, and delivery deadlines. Converts provider responses into stateful OWED obligations, closing only on verified recovery. |
 | **Presentation & Demo** | 10% | Clean, responsive UI with zero-config deterministic sandbox demo, live inspection of contract diffs, OWED monitoring, and recovered evidence within a tight 90-second judge flow. |
-| **Build in Public** | 5% | Public build updates and launch announcement shared during the hackathon window tagging `@LatentForce`. |
+| **Build in Public** | 5% | Public build updates and launch announcement shared during the hackathon window: [LinkedIn Post](https://lnkd.in/p/dPxTwKBM) (tagging `@LatentForce`). |
 
 ## What is real and what is sandboxed
 
