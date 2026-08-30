@@ -1,0 +1,26 @@
+{
+  "$schema": "https://skillpatch.dev/schemas/manifest.v1.json",
+  "registry": "https://skillpatch.dev",
+  "installed_skills": [
+    {
+      "slug": "realitycheck-reconciliation-auditor",
+      "name": "RealityCheck Reconciliation Auditor",
+      "version": "1.0.0",
+      "source": "skillpatch.dev/skills/realitycheck-reconciliation-auditor",
+      "description": "Audits expectation contracts against actual bills/receipts, computes deterministic reality diffs, and validates counterparty resolution evidence with strict zero-hallucination verification.",
+      "installed_at": "skills/realitycheck-reconciliation-auditor/SKILL.md",
+      "security_review": "passed",
+      "tags": ["reconciliation", "diff-engine", "contracts", "guardian", "consumer-advocacy"]
+    },
+    {
+      "slug": "fastapi-contract-tester",
+      "name": "FastAPI Contract & Lifecycle Tester",
+      "version": "1.2.0",
+      "source": "skillpatch.dev/skills/fastapi-contract-tester",
+      "description": "Scaffolds pytest test cases for FastAPI stateful lifecycle transitions, invariant assertions, and deterministic reconciliation diffs.",
+      "installed_at": "skills/fastapi-contract-tester/SKILL.md",
+      "security_review": "passed",
+      "tags": ["testing", "pytest", "fastapi", "invariants", "stress-test"]
+    }
+  ]
+}
