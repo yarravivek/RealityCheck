@@ -6,7 +6,7 @@ An invoice is one observation type. The core primitive is a machine-checkable ex
 
 ## Why use an LLM?
 
-Receipts, emails, policies, screenshots, and natural-language promises need multimodal and semantic interpretation. Gemini compiles those into typed terms with evidence quotes. Numeric, date, and exact-value comparisons remain deterministic so a model never “reasons” ₹849 minus ₹499.
+Receipts, emails, policies, screenshots, and natural-language promises need multimodal and semantic interpretation. The LLM compiles those into typed terms with evidence quotes. Numeric, date, and exact-value comparisons remain deterministic so a model never “reasons” ₹849 minus ₹499.
 
 ## What makes it autonomous?
 

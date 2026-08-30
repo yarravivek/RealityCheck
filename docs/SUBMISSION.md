@@ -15,7 +15,7 @@
 | **Demo Video** | Hosted in Google Drive (Strictly under 2 minutes per Rule 4) | Ready |
 | **Build in Public Link** | Public post on X / LinkedIn tagging `@LatentForce` (5% score) | Ready |
 | **Exported LatentCode Session** | Exported via `/export` inside the LatentCode CLI (`session-*.md`) | Ready |
-| **Google Drive Folder** | Contains demo video + all LatentCode session exports. Permission: **"Anyone with the link can view"** | Ready |
+| **Google Drive Folder** | [`Google Drive Folder`](https://drive.google.com/drive/folders/1zc08LaNuVj0ZsycgmN25m840O7K24ng6?usp=sharing) (Contains demo video + LatentCode session export. Permission: "Anyone with link can view") | Ready |
 
 ---
 

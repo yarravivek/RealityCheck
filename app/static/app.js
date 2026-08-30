@@ -181,7 +181,7 @@ async function init() {
       const card = document.createElement("div");
       card.className = "agent-card";
       const framework = document.createElement("span");
-      framework.textContent = "GOOGLE ADK";
+      framework.textContent = "SKILLPATCH AGENT";
       const name = document.createElement("strong");
       name.textContent = titleCase(agent.name);
       const readiness = document.createElement("small");

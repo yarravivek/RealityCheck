@@ -43,7 +43,9 @@ https://github.com/yarravivek/RealityCheck
 ---
 
 ### 5. Provide the Google Drive folder link containing both your demo video and exported LatentCode session transcripts. (Allow to view anyone with link) *
-*(Paste your Google Drive link here)*
+```text
+https://drive.google.com/drive/folders/1zc08LaNuVj0ZsycgmN25m840O7K24ng6?usp=sharing
+```
 
 > **Pre-submission Checklist for Google Drive:**
 > 1. Upload your **demo video** (maximum 2 minutes).

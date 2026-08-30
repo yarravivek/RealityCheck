@@ -90,30 +90,30 @@ RealityCheck ships with first-class SkillPatch skills built on the open `SKILL.m
 
 Truth labeling is a product feature, not a footnote.
 
-- **Real:** the FastAPI state machine, executable Google ADK fleet, Gemini structured extraction path, deterministic diff engine, evidence hashing/redaction, consent gate, OWED obligation, atomic SQLite/Firestore transitions, Firestore-backed public runtime, scheduler endpoint, hash-chained audit log, and tests.
-- **Live in production:** Gemini 3.5 Flash through the Google Gen AI SDK. The public health endpoint reports `ai_configured: true`; the UI exposes the connected model instead of hiding runtime status.
+- **Real:** the FastAPI state machine, executable agent fleet, LLM structured extraction path, deterministic diff engine, evidence hashing/redaction, consent gate, OWED obligation, atomic SQLite/Firestore transitions, Firestore-backed public runtime, scheduler endpoint, hash-chained audit log, and tests.
+- **Live in production:** Structured semantic extraction through GenAI SDK. The public health endpoint reports `ai_configured: true`; the UI exposes the connected model instead of hiding runtime status.
 - **Provider sandbox:** FiberMax is a fictional, deterministic connector used so a public judging demo never contacts or harasses a real company. The action packet, connector call, reply, obligation, and verification are real application behavior; only the external counterparty is sandboxed and labeled.
 
 ## Core Technologies
 
 - **LatentCode** — AI coding harness for rapid iterative development and verified session transcripts.
 - **SkillPatch** — Reusable agent skill standard (`skills/realitycheck-reconciliation-auditor`).
-- **Gemini 3.5 Flash** — Structured semantic extraction and evidence-grounded reasoning.
-- **Google Agent Development Kit** — Specialist agent fleet and orchestration boundaries.
-- **Cloud Firestore** — Durable cross-session case, expectation, obligation, and audit state in `argus-489918`.
+- **Structured GenAI** — Semantic extraction and evidence-grounded contract reasoning.
+- **Specialist Agent Fleet** — Autonomous multi-agent coordination and orchestration boundaries.
+- **Cloud Firestore / SQLite** — Durable cross-session case, expectation, obligation, and audit state.
 - **FastAPI & Pydantic** — Strongly typed state machine, validation, and deterministic diff engine.
 
 ## Run locally
 
 The public judge demo is available at <https://realitycheck-agent.vercel.app>. FastAPI compute
-runs on Vercel and durable transactional state runs in the default Cloud Firestore database in
-Google Cloud project `argus-489918` (`asia-south1`). The health endpoint exposes this split
+runs on Vercel and durable transactional state runs in the default Cloud Firestore database
+(`asia-south1`). The health endpoint exposes this split
 topology explicitly. The provider connector remains an honestly labeled deterministic sandbox.
 
 ### Prerequisites
 
 - Python 3.11+
-- A Gemini API key from Google AI Studio (optional for deterministic demo; required for live extraction)
+- An LLM API key (optional for deterministic demo; required for live extraction)
 
 ### Windows PowerShell
 
