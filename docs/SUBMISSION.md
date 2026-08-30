@@ -44,9 +44,9 @@ RealityCheck participates in the **SkillPatch Category Prize** (₹5,000 cash + 
 - **Novelty**: RealityCheck introduces **Expectation Contracts** and deterministic **Reality Diffs** ("Git diff for real life"). It is an autonomous state-machine agent that operates across long time horizons, not a generic chatbot.
 
 ### 2. Execution (30%)
-- **Engineering Quality**: 29 unit and integration tests passing with 88%+ statement coverage; zero Ruff lint errors.
+- **Engineering Quality**: 29 unit and integration tests passing with 88.24% statement coverage; zero Ruff lint errors.
 - **Stress-Tested Reliability**: 10,000-case adversarial lifecycle stress test executing 145,111 invariant checks with 0 failures.
-- **Durable State**: Dual-backend support (zero-dependency SQLite local fallback + Google Cloud Firestore transactional state in production).
+- **Durable State**: Dual-backend support (zero-dependency SQLite local fallback + Cloud Firestore transactional state in production).
 - **Security & Safety**: L0–L4 Guardian permission gates preventing any unauthorized external action, hash-chained audit logging, and automated evidence redaction.
 
 ### 3. Usefulness & Impact (25%)

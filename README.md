@@ -81,7 +81,7 @@ RealityCheck ships with first-class SkillPatch skills built on the open `SKILL.m
 | Criterion | Weight | RealityCheck Execution & Proof |
 |---|---:|---|
 | **Idea & Innovation** | 30% | First autonomous personal reconciliation agent. Replaces disjointed memory and screenshots with an evidence-backed expectation ledger and deterministic reality diffs ("Git diff for real life") rather than another conversational chatbot. |
-| **Execution** | 30% | 79 automated tests (92%+ coverage), 10,000-case adversarial stress tests with 145,111 invariant checks and 0 failures. Dual-backend persistence (zero-dependency SQLite local + Cloud Firestore transactional production). |
+| **Execution** | 30% | 29 automated tests (88.24% statement coverage), 10,000-case adversarial stress tests with 145,111 invariant checks and 0 failures. Dual-backend persistence (zero-dependency SQLite local + Cloud Firestore transactional production). |
 | **Usefulness & Impact** | 25% | Solves real consumer money loss across subscription hikes, utility errors, phantom fees, missed refunds, and delivery deadlines. Converts provider responses into stateful OWED obligations, closing only on verified recovery. |
 | **Presentation & Demo** | 10% | Clean, responsive UI with zero-config deterministic sandbox demo, live inspection of contract diffs, OWED monitoring, and recovered evidence within a tight 90-second judge flow. |
 | **Build in Public** | 5% | Public build updates and launch announcement shared during the hackathon window tagging `@LatentForce`. |

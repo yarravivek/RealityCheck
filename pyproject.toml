@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "realitycheck-agent"
 version = "1.0.0"
-description = "Personal reality reconciliation agent built with Gemini, Google ADK, Cloud Run, and Firestore"
+description = "Personal reality reconciliation agent: Expectation contracts, deterministic diffs, and verified recovery"
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
