@@ -1,6 +1,6 @@
 # Release verification report
 
-Verified on 30 August 2026 against the repository build and production runtime.
+Verified on 30-08-2026 against the repository build and production runtime.
 
 ## Release gates
 
@@ -39,7 +39,7 @@ Verified on 30 August 2026 against the repository build and production runtime.
 ## Runtime truth
 
 - The provider boundary is the explicitly labeled fictional FiberMax sandbox. No real company contact is claimed.
-- The public deployment at `https://realitycheck-agent.vercel.app` uses Vercel for stateless FastAPI compute and Cloud Firestore for durable state. On 30 August 2026, `/api/health` reported `store: firestore`, location `asia-south1`, and `ai_configured: true`; a public extraction returned structured terms and the resulting case was persisted to Firestore.
+- The public deployment at `https://realitycheck-agent.vercel.app` uses Vercel for stateless FastAPI compute and Cloud Firestore for durable state. On 30-08-2026, `/api/health` reported `store: firestore`, location `asia-south1`, and `ai_configured: true`; a public extraction returned structured terms and the resulting case was persisted to Firestore.
 - A live public lifecycle reached `recovered` with a ₹350 net difference, an approval-blocked action, one OWED obligation, and 12 audit events.
 
 ## Reproduce
