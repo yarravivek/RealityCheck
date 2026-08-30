@@ -13,7 +13,7 @@
 ![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-1e5948)
 ![Cloud Firestore](https://img.shields.io/badge/Google_Cloud-Firestore-4285F4)
 
-[Live demo](https://realitycheck-agent.vercel.app) · [Architecture](docs/ARCHITECTURE.md) · [2-minute demo video]([https://youtu.be/QK4VIIrkofk](https://drive.google.com/drive/folders/1zc08LaNuVj0ZsycgmN25m840O7K24ng6?usp=sharing)) · [BuildSprint Submission Guide](docs/SUBMISSION.md)
+[Live demo](https://realitycheck-agent.vercel.app) · [Architecture](docs/ARCHITECTURE.md) · [2-minute demo video]([https://drive.google.com/drive/folders/1zc08LaNuVj0ZsycgmN25m840O7K24ng6?usp=sharing]) · [BuildSprint Submission Guide](docs/SUBMISSION.md)
 
 </div>
 
